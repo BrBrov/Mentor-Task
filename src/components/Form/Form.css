@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px 10px 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  gap: 15px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.form__label {
+  font-size: 1.2em;
+  font-family: 'Gill Sans MT', sans-serif;
+  color: blueviolet;
+}
+
+.form__input {
+  width: 95%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: darkblue;
+}
+
+.form__button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: brown;
+}

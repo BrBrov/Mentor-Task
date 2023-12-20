@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  border: 1px solid #1f0655;
+  border-radius: 5px;
+}
+
+.list__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
