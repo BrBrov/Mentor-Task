@@ -3,10 +3,12 @@ import './App.css'
 import Form from './components/Form/Form'
 import Output from './components/Output/Output'
 import { ActionForm } from './types/Form-types';
+import RecordType from './types/Record-type.ts';
 
-function reducer(state: Array<string>, action: ActionForm) {
+function reducer(state: Array<RecordType>, action: ActionForm) {
+  if (!action.payload.data) return state;
   if (action.type === 'add') {
-    return [...state].concat(action.payload);
+    return [...state, action.payload];
   }
 
   return state;

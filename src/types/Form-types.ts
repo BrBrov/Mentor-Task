@@ -1,8 +1,9 @@
 import { Dispatch } from "react";
+import RecordType from './Record-type.ts';
 
 export interface ActionForm {
   type: string;
-  payload: string;
+  payload: RecordType;
 }
 
 interface FormProps {

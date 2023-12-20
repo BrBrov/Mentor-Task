@@ -1,6 +1,7 @@
 import { ReactNode, SyntheticEvent, useState } from "react";
 import FormProps from "../../types/Form-types";
 import './Form.css';
+import RecordType from '../../types/Record-type.ts';
 
 function Form({getInput}: FormProps): ReactNode {
   const [input, setInput] = useState('');
@@ -12,7 +13,12 @@ function Form({getInput}: FormProps): ReactNode {
   }
 
   function onPush() {
-    getInput({type: 'add', payload: input});
+    const data: RecordType = {
+      id: Date.now(),
+      data: input,
+    };
+    getInput({type: 'add', payload: data});
+    setInput('');
   }
 
   return (

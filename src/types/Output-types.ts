@@ -1,5 +1,7 @@
+import RecordType from './Record-type.ts';
+
 interface OutputProps {
-  input: Array<string>;
+  input: Array<RecordType>;
 }
 
 export default OutputProps;
